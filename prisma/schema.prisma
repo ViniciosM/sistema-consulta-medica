@@ -21,3 +21,14 @@ model Paciente {
   createdAt        DateTime  @default(now())
   updatedAt        DateTime  @updatedAt
 }
+
+model Profissional {
+  id             Int       @id @default(autoincrement())
+  nome           String
+  crm            String    @unique
+  especialidade  String
+  telefone       String?
+  email          String?
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
+}
