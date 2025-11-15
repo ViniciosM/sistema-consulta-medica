@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 import cors from "cors";
 import {router as pacientesRouter} from "./src/routes/pacientes.routes.js";
 import {router as profissionaisRouter} from "./src/routes/profissional.routes.js";
-
+import {router as consultasRoutes} from "./src/routes/consultas.routes.js";
 
 dotenv.config();
 
@@ -15,6 +15,7 @@ app.use(express.json());
 // Routes
 app.use("/api/pacientes", pacientesRouter);
 app.use("/api/profissionais", profissionaisRouter);
+app.use('/api/consultas', consultasRoutes);
 
 const PORT = process.env.PORT || 3000;
 
