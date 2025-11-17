@@ -1,6 +1,6 @@
 import { prisma } from '../config/database.js';
 
-// 🩺 Criar (agendar) uma consulta
+// Criar (agendar) uma consulta
 export const criarConsulta = async (req, res) => {
   try {
     const { dataHora, pacienteId, profissionalId, observacoes } = req.body;
@@ -57,7 +57,7 @@ export const criarConsulta = async (req, res) => {
   }
 };
 
-// 📋 Listar todas as consultas
+// Listar todas as consultas
 export const listarConsultas = async (req, res) => {
   try {
     const consultas = await prisma.consulta.findMany({
@@ -75,7 +75,7 @@ export const listarConsultas = async (req, res) => {
   }
 };
 
-// 🔍 Buscar consulta por ID
+// Buscar consulta por ID
 export const buscarConsultaPorId = async (req, res) => {
   try {
     const { id } = req.params;
@@ -99,7 +99,7 @@ export const buscarConsultaPorId = async (req, res) => {
   }
 };
 
-// ✏️ Atualizar (remarcar) consulta
+// Atualizar (remarcar) consulta
 export const atualizarConsulta = async (req, res) => {
   try {
     const { id } = req.params;
@@ -123,7 +123,7 @@ export const atualizarConsulta = async (req, res) => {
   }
 };
 
-// ❌ Cancelar consulta
+// Cancelar consulta
 export const cancelarConsulta = async (req, res) => {
   try {
     const { id } = req.params;
