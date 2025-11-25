@@ -1,9 +1,12 @@
 import express from 'express';
+
 import {
   criarProntuario,
   buscarProntuarioPorConsulta,
   atualizarProntuario
-} from '../controllers/prontuarios.controller.js';
+} from '../controllers/prontuario.controller.js';
+
+console.log(">>> carregou prontuarios.routes.js");
 
 export const router = express.Router();
 

@@ -1,4 +1,4 @@
-import { prisma } from '../prisma/client.js';
+import { prisma } from '../config/database.js';
 
 // Criar prontuário
 export const criarProntuario = async (req, res) => {
