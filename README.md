@@ -215,4 +215,4 @@ Principais camadas:
 
 ---
 
-Se tiver dúvidas, fique à vontade para abrir uma issue ou contribuir! 🚀
+Em caso de dúvidas, fique à vontade para abrir uma issue ou contribuir! 🚀
