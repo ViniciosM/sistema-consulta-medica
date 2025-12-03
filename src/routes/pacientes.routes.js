@@ -15,3 +15,6 @@ router.get("/:id", buscarPacientePorId); // buscar por id
 router.post("/", criarPaciente); // criar
 router.put("/:id", atualizarPaciente); // atualizar
 router.delete("/:id", deletarPaciente); // excluir
+
+
+

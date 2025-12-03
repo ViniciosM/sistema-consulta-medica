@@ -54,6 +54,7 @@ export const deletarPaciente = async (req, res) => {
         await prisma.paciente.delete({
             where: { id: Number(id) },
         });
+        res.status(204).send();
     } catch(error) {
         res.status(400).json( {error: "Erro ao excluir paciente"} );
     }

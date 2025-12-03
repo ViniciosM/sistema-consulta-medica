@@ -6,8 +6,6 @@ import {
   atualizarProntuario
 } from '../controllers/prontuario.controller.js';
 
-console.log(">>> carregou prontuarios.routes.js");
-
 export const router = express.Router();
 
 router.post('/', criarProntuario);
